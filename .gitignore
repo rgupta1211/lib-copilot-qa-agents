@@ -1,0 +1,13 @@
+# Runtime generated files
+agent/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Node
+node_modules/

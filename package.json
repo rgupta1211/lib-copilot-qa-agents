@@ -1,0 +1,24 @@
+{
+  "name": "lib-copilot-qa-agents",
+  "version": "1.0.0",
+  "description": "QA automation agents for Playwright - attach to Copilot Space for test verification, healing, coverage discovery, and generation",
+  "main": "index.js",
+  "type": "commonjs",
+  "keywords": [
+    "qa",
+    "test-automation",
+    "playwright",
+    "healing",
+    "coverage-discovery",
+    "test-generation",
+    "ai-agent"
+  ],
+  "peerDependencies": {
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

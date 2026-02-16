@@ -1,0 +1,42 @@
+{
+  "description": "QA Agent Library for Playwright",
+  "agents": [
+    {
+      "name": "qa-orchestrator",
+      "trigger": "Run QA workflow",
+      "description": "Main QA orchestrator for test verification, healing, discovery, generation, and validation",
+      "entrypoint": "workflow-agent.md",
+      "capabilities": [
+        "verify-tests",
+        "heal-tests",
+        "discover-coverage",
+        "generate-tests",
+        "validate-tests",
+        "full-workflow"
+      ]
+    },
+    {
+      "name": "coverage-discovery",
+      "trigger": "Discover missing test coverage",
+      "description": "Scans repository to find missing test coverage",
+      "entrypoint": "discovery/discover.md"
+    },
+    {
+      "name": "test-generator",
+      "trigger": "Generate missing tests",
+      "description": "Generates Playwright tests for missing coverage",
+      "entrypoint": "generation/generate-tests.md"
+    },
+    {
+      "name": "test-healer",
+      "trigger": "Heal failing tests",
+      "description": "Autonomous agent that fixes fragile test locators",
+      "entrypoint": "healing/healer.md"
+    }
+  ],
+  "compatibility": {
+    "minNodeVersion": "16.0.0",
+    "minPlaywrightVersion": "1.40.0",
+    "requiredTools": ["npm", "npx"]
+  }
+}
